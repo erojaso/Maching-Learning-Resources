@@ -1,0 +1,12 @@
+  
+[2016-05-08 00:48:55,265] INFO: Run GoogleQuerySpellingChecker at search_term
+[2016-05-08 01:29:06,789] INFO: Save to ../../Data/Clean/all.lemmatized.csv.pkl
+[2016-05-08 01:43:43,971] INFO: Save to ../../Data/Clean/all.lemmatized.stemmed.csv.pkl
+  
+[2016-05-08 01:44:22,874] INFO: DocId_search_term_1D (1D): corr = -0.006971
+[2016-05-08 01:44:23,556] INFO: DocId_product_title_1D (1D): corr = -0.005569
+[2016-05-08 01:44:24,929] INFO: DocId_product_description_1D (1D): corr = -0.001244
+[2016-05-08 01:44:26,188] INFO: DocId_product_attribute_1D (1D): corr = 0.089704
+[2016-05-08 01:44:26,684] INFO: DocId_product_brand_1D (1D): corr = -0.022024
+[2016-05-08 01:44:27,210] INFO: DocId_product_color_1D (1D): corr = 0.036558
+[2016-05-08 01:44:29,230] INFO: DocLen_search_term_1D (1D): corr = -0.084015
