@@ -156,7 +156,9 @@ def bivariate_plot(dtf, x, y, max_cat=20, figsize=(20,10)):
     try:
         ## num vs num --> scatter with density + stacked
         if (utils_recognize_type(dtf, x, max_cat) == "num") & (utils_recognize_type(dtf, y, max_cat) == "num"):
-            ### stacked
+            
+            print('num vs num')
+            ### stacked            
             dtf_noNan = dtf[dtf[x].notnull()]  #can't have nan
             breaks = np.quantile(dtf_noNan[x], q=np.linspace(0, 1, 11))
             groups = dtf_noNan.groupby([pd.cut(dtf_noNan[x], bins=breaks, duplicates='drop')])[y].agg(['mean','median','size'])
@@ -173,13 +175,17 @@ def bivariate_plot(dtf, x, y, max_cat=20, figsize=(20,10)):
 
         ## cat vs cat --> hist count + hist %
         elif (utils_recognize_type(dtf, x, max_cat) == "cat") & (utils_recognize_type(dtf, y, max_cat) == "cat"):  
+
+            print('cat vs cat')
             fig, ax = plt.subplots(nrows=1, ncols=2,  sharex=False, sharey=False, figsize=figsize)
             fig.suptitle(x+"   vs   "+y, fontsize=20)
-            ### count
+
+            ### count            
             ax[0].title.set_text('count')
             order = dtf.groupby(x)[y].count().index.tolist()
             sns.catplot(x=x, hue=y, data=dtf, kind='count', order=order, ax=ax[0])
             ax[0].grid(True)
+
             ### percentage
             ax[1].title.set_text('percentage')
             a = dtf.groupby(x)[y].count().reset_index()
@@ -190,6 +196,7 @@ def bivariate_plot(dtf, x, y, max_cat=20, figsize=(20,10)):
             b["%"] = b[0] / b["tot"] *100
             sns.barplot(x=x, y="%", hue=y, data=b, ax=ax[1]).get_legend().remove()
             ax[1].grid(True)
+
             ### fix figure
             plt.close(2)
             plt.close(3)
@@ -197,17 +204,22 @@ def bivariate_plot(dtf, x, y, max_cat=20, figsize=(20,10)):
     
         ## num vs cat --> density + stacked + boxplot 
         else:
+
+            print('num vs cat')
             if (utils_recognize_type(dtf, x, max_cat) == "cat"):
                 cat,num = x,y
             else:
                 cat,num = y,x
+
             fig, ax = plt.subplots(nrows=1, ncols=3,  sharex=False, sharey=False, figsize=figsize)
             fig.suptitle(x+"   vs   "+y, fontsize=20)
+
             ### distribution
             ax[0].title.set_text('density')
             for i in sorted(dtf[cat].unique()):
                 sns.distplot(dtf[dtf[cat]==i][num], hist=False, label=i, ax=ax[0])
             ax[0].grid(True)
+
             ### stacked
             dtf_noNan = dtf[dtf[num].notnull()]  #can't have nan
             ax[1].title.set_text('bins')
@@ -218,6 +230,7 @@ def bivariate_plot(dtf, x, y, max_cat=20, figsize=(20,10)):
             for col in tmp.drop("tot", axis=1).columns:
                 tmp[col] = tmp[col] / tmp["tot"]
             tmp.drop("tot", axis=1)[sorted(dtf[cat].unique())].plot(kind='bar', stacked=True, ax=ax[1], legend=False, grid=True)
+
             ### boxplot   
             ax[2].title.set_text('outliers')
             sns.catplot(x=cat, y=num, data=dtf, kind="box", ax=ax[2], order=sorted(dtf[cat].unique()))
@@ -371,7 +384,7 @@ def corr_matrix(dtf, method="pearson", negative=True, lst_filters=[], annotation
     dtf_corr = dtf_corr if negative is True else dtf_corr.abs()
     fig, ax = plt.subplots(figsize=figsize)
     sns.heatmap(dtf_corr, annot=annotation, fmt='.2f', cmap="YlGnBu", ax=ax, cbar=True, linewidths=0.5)
-    plt.title(method + " correlation")
+    plt.title(method + " Correlation")
     return dtf_corr
 
 
@@ -383,7 +396,7 @@ def pps_matrix(dtf, annotation=True, lst_filters=[], figsize=(10,5)):
     dtf_pps = ppscore.matrix(dtf) if len(lst_filters) == 0 else ppscore.matrix(dtf).loc[lst_filters]
     fig, ax = plt.subplots(figsize=figsize)
     sns.heatmap(dtf_pps, vmin=0., vmax=1., annot=annotation, fmt='.2f', cmap="YlGnBu", ax=ax, cbar=True, linewidths=0.5)
-    plt.title("predictive power score")
+    plt.title("Predictive Power Score")
     return dtf_pps
 
 
@@ -866,8 +879,11 @@ def tune_classif_model(X_train, y_train, model_base=None, param_dic=None, scorin
     ## params
     model_base = ensemble.GradientBoostingClassifier() if model_base is None else model_base
     param_dic = {'learning_rate':[0.15,0.1,0.05,0.01,0.005,0.001], 'n_estimators':[100,250,500,750,1000,1250,1500,1750], 'max_depth':[2,3,4,5,6,7]} if param_dic is None else param_dic                        
-    dic_scores = {'accuracy':metrics.make_scorer(metrics.accuracy_score), 'precision':metrics.make_scorer(metrics.precision_score), 
-                  'recall':metrics.make_scorer(metrics.recall_score), 'f1':metrics.make_scorer(metrics.f1_score)}
+    dic_scores = {'accuracy':metrics.make_scorer(metrics.accuracy_score), 
+                    'precision':metrics.make_scorer(metrics.precision_score), 
+                    'recall':metrics.make_scorer(metrics.recall_score), 
+                    'f1':metrics.make_scorer(metrics.f1_score)
+                  }
     
     ## Search
     print("---", searchtype, "---")

@@ -2,5 +2,3 @@
 #from src.util.project import Project
 #from options import Options
 #from process import Process, ProcessException
-
-__all__ = ['prog']
