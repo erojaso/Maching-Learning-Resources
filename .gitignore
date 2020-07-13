@@ -2,13 +2,15 @@
 
 # Maching-Learning-Resources project structure
 
-
+How To/.ipynb_checkpoints
 How To/How_to_Anomaly_Detection/.ipynb_checkpoints
 How To/How_to_Anomaly_Detection/Beginning_Anomaly_Detection_Book
 
 How To/How_to_Clasifications/.ipynb_checkpoints
 
 How To/How_to_Data_Preparation/.ipynb_checkpoints
+
+How To/How_to_Data_Preparation/How_to_00_Exploratory_Data_Analysis/.ipynb_checkpoints
 How To/How_to_Data_Preparation/How_to_01_Data_Cleaning/.ipynb_checkpoints
 How To/How_to_Data_Preparation/How_to_02_Feature_Selection/.ipynb_checkpoints
 How To/How_to_Data_Preparation/How_to_03_Data_Transforms/.ipynb_checkpoints
