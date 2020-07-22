@@ -2,6 +2,8 @@
 
 # Maching-Learning-Resources project structure
 
+data/nbaallelo.data.csv
+
 How To/.ipynb_checkpoints
 How To/How_to_Anomaly_Detection/.ipynb_checkpoints
 How To/How_to_Anomaly_Detection/Beginning_Anomaly_Detection_Book
@@ -16,6 +18,16 @@ How To/How_to_Data_Preparation/How_to_02_Feature_Selection/.ipynb_checkpoints
 How To/How_to_Data_Preparation/How_to_03_Data_Transforms/.ipynb_checkpoints
 How To/How_to_Data_Preparation/How_to_04_Feature_Engineering/.ipynb_checkpoints
 How To/How_to_Data_Preparation/How_to_05_Dimensionality_Reduction/.ipynb_checkpoints
+
+
+How To/How_to_Implement_ML/.ipynb_checkpoints
+How To/How_to_Implement_ML/Algorithm_Evaluation/.ipynb_checkpoints
+How To/How_to_Implement_ML/Algorithms_Preparation/.ipynb_checkpoints
+How To/How_to_Implement_ML/Ensemble_Algorithms/.ipynb_checkpoints
+How To/How_to_Implement_ML/Linear_Algorithms/.ipynb_checkpoints
+How To/How_to_Implement_ML/Nonlinear_algorithms/.ipynb_checkpoints
+
+
 
 How To/How_to_Probability/.ipynb_checkpoints
 How To/How_to_Regresions/.ipynb_checkpoints

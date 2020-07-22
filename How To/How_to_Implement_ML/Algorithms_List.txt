@@ -1,0 +1,32 @@
+
+
+1. Data Preparation
+- Load Data: How to load and manipulate data from the CSV standard file format.
+- Data Scaling: How to prepare numerical data for learning algorithms.
+- Algorithm Evaluation: Techniques for estimating the performance of algorithms on unseen data.
+- *** Evaluation Metrics: Scoring methods to evaluate the skill of predictions made on new data.
+- *** Baseline Models: Techniques that can establish the best worst case from which to improve on a problem.
+
+
+2. Linear Algorithms
+
+- Algorithm Test Harness: Drawing together the elements from the previous section to consistently and objectively evaluate different techniques on the same problem.
+- ***** Simple Linear Regression: For predicting numerical values when there is only a single input.
+- Multivariate Linear Regression: For predicting numerical values with more than one input
+(trained using StochasticGradient Descent).
+- Logistic Regression: For predicting a class value on 2 class problems
+(trained using Stochastic Gradient Descent).
+- ***** Perceptron: The simplest type of neural network for classification problems
+(trained using StochasticGradient Descent).
+
+3. Nonlinear Algorithms
+- Classification and ****** Regression Trees: Decision trees, in this case applied to classification problems.
+- Naive Bayes: The very simple application of Bayes’ Theorem to classification problems.
+- k-Nearest Neighbors: For predicting numerical or categorical outcomes directly from training data.
+- Learning Vector Quantization: A type of neural network that is more efficient than k-Nearest Neighbors.
+- **** Backpropagation: The most widely used type of artificial neural network that underlies the broader field of deep learning.
+
+4. Ensemble Algorithms
+- **** Bootstrap Aggregation: Also known as bagging that involves an ensemble of decision trees.
+- **** Random Forest: An extension of bagging that results in faster training and better performance.
+- Stacked Generalization: An ensemble method also known as stacking or blending that learns how to best combine the perdictions from multiple models.
