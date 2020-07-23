@@ -1,0 +1,6 @@
+
+ Matplotlib - https://matplotlib.org/
+ Seaborn - https://seaborn.pydata.org/
+ Plotly - https://plot.ly/python/
+ ggplot - http://ggplot.yhathq.com/
+ Altair - https://altair-viz.github.io/
