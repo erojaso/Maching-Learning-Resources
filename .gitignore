@@ -3,6 +3,12 @@
 # Maching-Learning-Resources project structure
 
 data/nbaallelo.data.csv
+data/__MACOSX
+data/groupby.data.csv
+data/groupby-data.zip
+data/groupby.data.legislators_historical.csv
+data/sonar.all.data.csv
+data/groupby.data.airqual.csv
 
 How To/.ipynb_checkpoints
 How To/How_to_Anomaly_Detection/.ipynb_checkpoints
@@ -23,9 +29,12 @@ How To/How_to_Data_Preparation/How_to_05_Dimensionality_Reduction/.ipynb_checkpo
 How To/How_to_Implement_ML/.ipynb_checkpoints
 How To/How_to_Implement_ML/Algorithm_Evaluation/.ipynb_checkpoints
 How To/How_to_Implement_ML/Algorithms_Preparation/.ipynb_checkpoints
+How To/How_to_Implement_ML/Algorithms_Preparation/.ipynb_checkpoints
 How To/How_to_Implement_ML/Ensemble_Algorithms/.ipynb_checkpoints
 How To/How_to_Implement_ML/Linear_Algorithms/.ipynb_checkpoints
 How To/How_to_Implement_ML/Nonlinear_algorithms/.ipynb_checkpoints
+How To/How_to_Implement_ML/Nonlinear_algorithms/main/__pycache__
+How To/How_to_Implement_ML/Nonlinear_algorithms/main/utility/__pycache__
 
 
 
@@ -33,3 +42,7 @@ How To/How_to_Probability/.ipynb_checkpoints
 How To/How_to_Regresions/.ipynb_checkpoints
 How To/How_to_Statistics/.ipynb_checkpoints
 How To/How_to_Visualizacion/.ipynb_checkpoints
+How To/How_to_Visualizacion/How_to_Anatomy_Matplotlib
+How To/How_to_Visualizacion/How_to_Anatomy_Matplotlib/.ipynb_checkpoints
+How To/How_to_Visualizacion/How_to_Anatomy_Matplotlib/*.swp
+How To/How_to_Visualizacion/How_to_Anatomy_Matplotlib/*.pyc

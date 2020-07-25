@@ -12,7 +12,7 @@ Reference: https://realpython.com/tutorials/machine-learning/
 
 2. Linear Algorithms
 
-- Algorithm Test Harness: Drawing together the elements from the previous section to consistently and objectively evaluate different techniques on the same problem.
+- ***** Algorithm Test Harness: Drawing together the elements from the previous section to consistently and objectively evaluate different techniques on the same problem.
 - ***** Simple Linear Regression: For predicting numerical values when there is only a single input.
 - Multivariate Linear Regression: For predicting numerical values with more than one input
 (trained using StochasticGradient Descent).
