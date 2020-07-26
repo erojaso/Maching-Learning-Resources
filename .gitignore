@@ -9,6 +9,7 @@ data/groupby-data.zip
 data/groupby.data.legislators_historical.csv
 data/sonar.all.data.csv
 data/groupby.data.airqual.csv
+data/aggregator.corp.data.csv
 
 How To/.ipynb_checkpoints
 How To/How_to_Anomaly_Detection/.ipynb_checkpoints
