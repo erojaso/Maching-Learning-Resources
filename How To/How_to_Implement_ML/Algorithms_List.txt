@@ -20,6 +20,7 @@ Reference: https://realpython.com/tutorials/machine-learning/
 (trained using Stochastic Gradient Descent).
 - ***** Perceptron: The simplest type of neural network for classification problems
 (trained using StochasticGradient Descent).
+- Linear Discriminant Analysis
 
 3. Nonlinear Algorithms
 - Classification and ****** Regression Trees: Decision trees, in this case applied to classification problems.
@@ -27,8 +28,30 @@ Reference: https://realpython.com/tutorials/machine-learning/
 - k-Nearest Neighbors: For predicting numerical or categorical outcomes directly from training data.
 - Learning Vector Quantization: A type of neural network that is more efficient than k-Nearest Neighbors.
 - **** Backpropagation: The most widely used type of artificial neural network that underlies the broader field of deep learning.
+- Support Vector Machines
 
 4. Ensemble Algorithms
 - **** Bootstrap Aggregation: Also known as bagging that involves an ensemble of decision trees.
 - **** Random Forest: An extension of bagging that results in faster training and better performance.
 - Stacked Generalization: An ensemble method also known as stacking or blending that learns how to best combine the perdictions from multiple models.
+
+
+
+5. Parametric ML algorithms include:
+A learning model that summarizes data with a set of parameters of fixed size (independent of the number of training examples) is called a parametric model.
+
+- Logistic Regression
+- Linear Discriminant Analysis
+- Perceptron
+- Naive Bayes
+- Simple Neural Networks
+
+5. Nonparametric ML Algorithms
+Nonparametric methods are good when you have a lot of data and no prior knowledge, and when you don’t want to worry too much about choosing just the right features.
+
+- k-Nearest Neighbors
+- Decision Trees like CART and C4.5
+- Support Vector Machines
+
+
+

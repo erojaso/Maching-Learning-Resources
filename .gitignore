@@ -11,6 +11,12 @@ data/sonar.all.data.csv
 data/groupby.data.airqual.csv
 data/aggregator.corp.data.csv
 
+TensorFlow2nd_HandOn_ML_Book/.ipynb_checkpoints
+TensorFlow2nd_HandOn_ML_Book/code
+TensorFlow2nd_HandOn_ML_Book/datasets
+TensorFlow2nd_HandOn_ML_Book/images
+
+
 How To/.ipynb_checkpoints
 How To/How_to_Anomaly_Detection/.ipynb_checkpoints
 How To/How_to_Anomaly_Detection/Beginning_Anomaly_Detection_Book
@@ -26,7 +32,6 @@ How To/How_to_Data_Preparation/How_to_03_Data_Transforms/.ipynb_checkpoints
 How To/How_to_Data_Preparation/How_to_04_Feature_Engineering/.ipynb_checkpoints
 How To/How_to_Data_Preparation/How_to_05_Dimensionality_Reduction/.ipynb_checkpoints
 
-
 How To/How_to_Implement_ML/.ipynb_checkpoints
 How To/How_to_Implement_ML/Algorithm_Evaluation/.ipynb_checkpoints
 How To/How_to_Implement_ML/Algorithms_Preparation/.ipynb_checkpoints
@@ -36,8 +41,6 @@ How To/How_to_Implement_ML/Linear_Algorithms/.ipynb_checkpoints
 How To/How_to_Implement_ML/Nonlinear_algorithms/.ipynb_checkpoints
 How To/How_to_Implement_ML/Nonlinear_algorithms/main/__pycache__
 How To/How_to_Implement_ML/Nonlinear_algorithms/main/utility/__pycache__
-
-
 
 How To/How_to_Probability/.ipynb_checkpoints
 How To/How_to_Regresions/.ipynb_checkpoints
