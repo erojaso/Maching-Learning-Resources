@@ -17,42 +17,42 @@ TensorFlow2nd_HandOn_ML_Book/datasets
 TensorFlow2nd_HandOn_ML_Book/images
 
 
-How To/.ipynb_checkpoints
-How To/How_to_Anomaly_Detection/.ipynb_checkpoints
-How To/How_to_Anomaly_Detection/Beginning_Anomaly_Detection_Book
+.ipynb_checkpoints
+How_to_Anomaly_Detection/.ipynb_checkpoints
+How_to_Anomaly_Detection/Beginning_Anomaly_Detection_Book
 
-How To/How_to_Data_Preparation/.ipynb_checkpoints
-How To/How_to_Data_Preparation/How_to_00_Exploratory_Data_Analysis/.ipynb_checkpoints
-How To/How_to_Data_Preparation/How_to_01_Data_Cleaning/.ipynb_checkpoints
-How To/How_to_Data_Preparation/How_to_02_Feature_Selection/.ipynb_checkpoints
-How To/How_to_Data_Preparation/How_to_03_Data_Transforms/.ipynb_checkpoints
-How To/How_to_Data_Preparation/How_to_04_Feature_Engineering/.ipynb_checkpoints
-How To/How_to_Data_Preparation/How_to_05_Dimensionality_Reduction/.ipynb_checkpoints
+How_to_Data_Preparation/.ipynb_checkpoints
+How_to_Data_Preparation/How_to_00_Exploratory_Data_Analysis/.ipynb_checkpoints
+How_to_Data_Preparation/How_to_01_Data_Cleaning/.ipynb_checkpoints
+How_to_Data_Preparation/How_to_02_Feature_Selection/.ipynb_checkpoints
+How_to_Data_Preparation/How_to_03_Data_Transforms/.ipynb_checkpoints
+How_to_Data_Preparation/How_to_04_Feature_Engineering/.ipynb_checkpoints
+How_to_Data_Preparation/How_to_05_Dimensionality_Reduction/.ipynb_checkpoints
 
-How To/How_to_Deep_Learning/.ipynb_checkpoints
-How To/How_to_Deep_Learning_Computer_Vision/.ipynb_checkpoints
-How To/How_to_Deep_Learning_NLP/.ipynb_checkpoints
-How To/How_to_Deep_Learning_Performance/.ipynb_checkpoints
-
-
-How To/How_to_Implement_ML/.ipynb_checkpoints
-How To/How_to_Implement_ML/Algorithm_Evaluation/.ipynb_checkpoints
-How To/How_to_Implement_ML/Algorithms_Preparation/.ipynb_checkpoints
-
-How To/How_to_Implement_ML/Ensemble_Algorithms/.ipynb_checkpoints
-How To/How_to_Implement_ML/Linear_Algorithms/.ipynb_checkpoints
-How To/How_to_Implement_ML/Nonlinear_algorithms/.ipynb_checkpoints
-How To/How_to_Implement_ML/Nonlinear_algorithms/main/__pycache__
-How To/How_to_Implement_ML/Nonlinear_algorithms/main/utility/__pycache__
-How To/How_to_Implement_ML/Python_Scikit_Learn/.ipynb_checkpoints
+How_to_Deep_Learning/.ipynb_checkpoints
+How_to_Deep_Learning_Computer_Vision/.ipynb_checkpoints
+How_to_Deep_Learning_NLP/.ipynb_checkpoints
+How_to_Deep_Learning_Performance/.ipynb_checkpoints
 
 
-How To/How_to_Probability/.ipynb_checkpoints
+How_to_Implement_ML/.ipynb_checkpoints
+How_to_Implement_ML/Algorithm_Evaluation/.ipynb_checkpoints
+How_to_Implement_ML/Algorithms_Preparation/.ipynb_checkpoints
 
-How To/How_to_Statistics/.ipynb_checkpoints
+How_to_Implement_ML/Ensemble_Algorithms/.ipynb_checkpoints
+How_to_Implement_ML/Linear_Algorithms/.ipynb_checkpoints
+How_to_Implement_ML/Nonlinear_algorithms/.ipynb_checkpoints
+How_to_Implement_ML/Nonlinear_algorithms/main/__pycache__
+How_to_Implement_ML/Nonlinear_algorithms/main/utility/__pycache__
+How_to_Implement_ML/Python_Scikit_Learn/.ipynb_checkpoints
 
-How To/How_to_Visualizacion/.ipynb_checkpoints
-How To/How_to_Visualizacion/How_to_Anatomy_Matplotlib
-How To/How_to_Visualizacion/How_to_Anatomy_Matplotlib/.ipynb_checkpoints
-How To/How_to_Visualizacion/How_to_Anatomy_Matplotlib/*.swp
-How To/How_to_Visualizacion/How_to_Anatomy_Matplotlib/*.pyc
+
+How_to_Probability/.ipynb_checkpoints
+
+How_to_Statistics/.ipynb_checkpoints
+
+How_to_Visualizacion/.ipynb_checkpoints
+How_to_Visualizacion/How_to_Anatomy_Matplotlib
+How_to_Visualizacion/How_to_Anatomy_Matplotlib/.ipynb_checkpoints
+How_to_Visualizacion/How_to_Anatomy_Matplotlib/*.swp
+How_to_Visualizacion/How_to_Anatomy_Matplotlib/*.pyc
