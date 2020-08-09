@@ -20,7 +20,7 @@ Reference: https://realpython.com/tutorials/machine-learning/
 - ***** Linear Discriminant Analysis  or Fisher’s Discriminant Analysis
 
 3. Nonlinear Algorithms
-- Classification and ****** Regression Trees: Decision trees, in this case applied to classification problems.
+- **** Classification and Regression Trees: Decision trees, in this case applied to classification problems.
 - Naive Bayes: The very simple application of Bayes’ Theorem to classification problems.
 - k-Nearest Neighbors: For predicting numerical or categorical outcomes directly from training data.
 - Learning Vector Quantization: A type of neural network that is more efficient than k-Nearest Neighbors.
