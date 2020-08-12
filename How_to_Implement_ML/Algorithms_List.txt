@@ -19,6 +19,16 @@ Reference: https://realpython.com/tutorials/machine-learning/
 - ***** Perceptron: The simplest type of neural network for classification problems (trained using StochasticGradient Descent).
 - ***** Linear Discriminant Analysis  or Fisher’s Discriminant Analysis
 
+Regression in ML
+Linear Regression
+Logistic Regression
+Ridge Regresion
+Loss Regression
+Polynomial Regresion
+Step wise Regression
+Elastic Net Regresion
+
+
 3. Nonlinear Algorithms
 - **** Classification and Regression Trees: Decision trees, in this case applied to classification problems.
 - Naive Bayes: The very simple application of Bayes’ Theorem to classification problems.
