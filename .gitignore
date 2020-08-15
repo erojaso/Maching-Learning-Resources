@@ -10,6 +10,7 @@ data/groupby.data.legislators_historical.csv
 data/sonar.all.data.csv
 data/groupby.data.airqual.csv
 data/aggregator.corp.data.csv
+data/weatherAUS.data.csv
 
 TensorFlow2nd_HandOn_ML_Book/.ipynb_checkpoints
 TensorFlow2nd_HandOn_ML_Book/code
