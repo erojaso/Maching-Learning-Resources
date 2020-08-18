@@ -1,0 +1,122 @@
+
+
+Considerar la alarma como un vertice y el ambiente como otro, considerar como la configuracion como otro vertice
+Considerar condiciones 'exogenas' y 'endogenas'
+	exogena: ambiente, periodo (dia de la semana, o semana, cantidad de pruebas por semana, 
+			cantidad de pruebas por dia), 
+			periodo (franja horaria -mañana, tarde, noche-, por hora, determinar hora pico), periodo (dia del mes:, 1st, 2nd, 3rd, otros)
+			- Week over week differences: Seasonal alerts that signify when data points at the current time 
+	endogena: el test o plan de pruebas, configuracion de instrumentos, configuracion del experimento, CPU, Memoria
+	
+Considerar clasificar una anomalia
+	reference: (1). Take advantage of the three sigma rule, which states that 99.73% of values in a normal distribution lie within three standard deviations of the mean. If an incoming data point is more than three standard deviations of the residual from our forecast, we can reasonably classify the point as an anomaly.	
+	
++++ Agregar vertices como CPU y Memoria al analisis
++++ bucamos establecer: 'rule-based alerts'. 
++++ necesitamos una muestra de datos de almenos 120 (meses), solo para el analisis intra-periodos
++++ (finding retrospective anomalies) utilizaremos muestras de 4 semanas completas (28 dias) para predicciones y 1 semana de fondo como la actual (d:29, l:30, m:31, m:32:, j:33, v:34, s:35, ). de esta manera puedo el miercoles comparar el comportamiento del Miercoles respecto a los ultimos 4 miercoles anteriores. los domingos el conteno reinicia en 28
+	reference: (1) https://medium.com/pinterest-engineering/building-a-real-time-anomaly-detection-system-for-time-series-at-pinterest-a833e6856ddd
+	How do we update our model in real-time?
+	- Brute Force Updates: 
+	- Scheduled Updates:
+	- Event Driven Updates:
+	- Online Updates: 
+
+
++++ considerar las variaciones week over week
++++ considerar las variaciones day over day
++++ considerar las variaciones week day preview week day
++++ Temporal invariance: no cambios en un periodo de tiempo (como cuando una memoria se queda congelada)	
+	
+**** deben girarse los datos en el caso de las alarmas para convertir start-end a una lista de de momentos y llenvar los valores omisos
+**** luego de girarlos para cada convinacion de analisis, instrumentos, experimiento, otros, podriamos hacer merge por fecha
+
+raw: datestart:hh::mm:ss, dateend:hh::mm:ss, AlarmA, EnvironmentIndicators
+convert:
+datestart:hh::mm:ss
+	date:hh::mm:ss, alarmA, EnvironmentIndicators***
+	date:hh::mm:ss
+	date:hh::mm:ss
+	date:hh::mm:ss
+	date:hh::mm:ss
+	date:hh::mm:ss, alarmA, EnvironmentIndicators
+dateend:hh::mm:ss	
+**llenar valores omisos
+	
+
+determinar si hay experimientos que se repiten
+determinar si hay experimientos que se repiten - frecuencia
+determinar si hay experimientos que se repiten muestran mas fallos
+
+determinar si hay un modulo que muestre mas fallos (por modulo)
+determinar si hay una celda que muestra mas fallos (por modulo+celda, por celda-individual)
+determinar si hay una convinacion tester-UIP que muetre mas fallos (individual)
+determinar si hay una convinacion tester-UIP que muetre mas fallos (por modulo, por modulo-celda)
+determinar si hay una convinacion de instrumentos que muestre mas fallos
+determinar si hay una convinacion de instrumentos que muestre mas fallos (por tester-UIP, por tester-modulo-celda)
+determinar si hay una convinacion de instrumentos que muestre mas fallos UIP*
+
+determinar si hay un dia de la semana que muestre mas fallo ( aumenta la probabilidad por dia)
+
+determinar si hay una correlacion entre fallos y factores endogenos o exogenos, conisderar proporcionar una escala de valor a estos factores, ya sea por tipo 'endogeno' o 'exogeno' o intra-escala donde se determine cual de los factores de un grupo incide mas o presenta una mayor correlacion (ejemplo: memoria incide mas que CPU o instruemtos mas que el experimento, o UIP mas que tester/slot)
+
+
+determinar si hay un patron de fallo	
+	(1) determinado por el usuario como tier2
+	(2) determinado por el momento de fallo
+	(3) determinar si el patron de fallo esta compuesto por un patron: 'patron-ambiental', 'patron-alarma'
+
+
+pruebas efectuada
+	determinar si hay un plan de pruebas que muestre mas fallos
+	determinar si hay un plan de pruebas que muestre mas fallos para un  (por tester-UIP, por tester-UIP-modulo-celda, tester-UIP-modulo-celda-instrumentos)
+	determinar si hay un plan de pruebas que muestre mas fallos para un  (por alarma. alarma-tier)
+
+
+configuraciones (composicion de instrumentos)
+	(1) determinar si hay una configuracion que muestra mas fallos (utilizando como referencia tier2)
+	(2) determinar si hay una configuracion que muestra un patron de alarmas determinado
+	(1) determinar si hay una configuracion que muestra mas fallos (utilizando como referencia tier2) con un 'patron-ambiental'
+	(1) determinar si hay una configuracion que muestra mas fallos (utilizando como referencia tier2) con un 'patron-alarma'
+
+Analisis de alarmas
+	determinar si hay un 'patron-alarma', posiblemente relacionado con la prueba
+	determinar si hay un 'patron-alarma' asociado a una configuracion
+	determinar si hay un 'patron-alarma' asociado a una configuracion que muestra mas fallos
+	
+	(1) Cambio de intervalo. Tiempo entre activaciones cambia.
+		el tiempo medio entre cada activacion de una alarma cambia, si se presenta cada minuto y aumenta o disminiye
+	(2) Cambio de Intervalo. Tiempo de activacion de la alarma cambien
+		el tiempo medio que una alarma permance activada cambia
+		
+	(*) cambio de frecuencia. 
+		por ejemplo simpre son 3 'timbrazos' y luego un descanzo, el cambio de 4 trimbrazos/descanzo, o el cambio de 2 timbrasos/descanzo podria entenderse cambio de frecuencia.
+		
+	(3) Cambio de Secuncia (combinaciones). Una alarma siempre esta asociado a otra y esta asociacion cambia
+		se espera que las alarmas A, B, C encendidas a la misma ves	(cordinacion)
+		se espera que las alarmas A, B, C se enciendan en un order terminado (alteraciones)
+		se espera que las alarmas A, B, C esten encendidas en un momento dertimando y se grega una (posibles conflictos)
+		se espera que las alarmas A, B, C, D esten encendidas en un momento dertimando y se apaga una (posibles falta)
+		- se agregan nuevas alarmas
+		- se quitan alarmas
+		
+	(4) cambio de secuencia. la alarma se debe dar en un orden determinado y cambia el orden
+	
+	
+	** convertir las alarmas en series de tiempo
+	** analizarlas como series de tiempo
+				
+Condiciones ambientales
+	(1) variaciones de alguna de las variables de entorno
+	(2) establecer 'patron-ambiental': sub-patron (valores inferiores), patron-base (normal), patron-extremo (valores superiores)
+	(2.1) determinar en cual rango se muestran mas fallos	
+		dentro de 1 desviacion standar
+		dentro de 2 desviaciones pero fuera de la primera desviacion
+		dentro de 2 desviaciones pero fuera de la primera desviacion en el rango sub-patron (lado izquierdo de la campana)
+		dentro de 2 desviaciones pero fuera de la primera desviacion en el rango patron-extremos (lado derecho de la campana)
+		
+	(3) determinar si hay una convinacion de variables ambientales que confluyen en un momento de fallo, 
+		simpre los valores muetran una convinacion determinada en el momento de fallo
+		el valor medio de todos los valores ambientales es distinto en el momento de fallo, al valor medio general (aumentos drasticos, o disminuciones drasticas)
+	
+	** analizarlas como series de tiempo
