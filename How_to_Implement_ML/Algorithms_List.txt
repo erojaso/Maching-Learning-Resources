@@ -19,14 +19,14 @@ Reference: https://realpython.com/tutorials/machine-learning/
 - ***** Perceptron: The simplest type of neural network for classification problems (trained using StochasticGradient Descent).
 - ***** Linear Discriminant Analysis  or Fisher’s Discriminant Analysis
 
-Regression in ML
+Regression in ML (https://techvidvan.com/tutorials/types-of-regression/)
 Linear Regression
 Logistic Regression
+Polynomial Regresion
+Stepwise Regression
 Ridge Regresion
 Loss Regression
-Polynomial Regresion
-Step wise Regression
-Elastic Net Regresion
+ElasticNet Regresion
 
 
 3. Nonlinear Algorithms
