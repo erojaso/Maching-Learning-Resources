@@ -27,6 +27,7 @@ Stepwise Regression
 Ridge Regresion
 Loss Regression
 ElasticNet Regresion
+Softmax Regression
 
 
 3. Nonlinear Algorithms
