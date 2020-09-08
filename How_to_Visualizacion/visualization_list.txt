@@ -4,3 +4,4 @@
  Plotly - https://plot.ly/python/
  ggplot - http://ggplot.yhathq.com/
  Altair - https://altair-viz.github.io/
+ Graph-Gallery - https://python-graph-gallery.com/
